@@ -4,4 +4,10 @@ import saffron from './assets/saffron.png'
 
 const saffronImg = document.getElementById('saffronImg')
 saffronImg.src = saffron
-console.log(generateJoke());
+
+const jokeBtn = document.getElementById('jokeBtn')
+jokeBtn.addEventListener('click', () => {
+    generateJoke();
+})
+
+generateJoke()
